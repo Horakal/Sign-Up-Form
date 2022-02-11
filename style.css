@@ -1,0 +1,159 @@
+@font-face {
+	font-family: NorseBold;
+	src: url(Norse-Bold.otf);
+}
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family:  'Roboto Slab', serif;
+}
+input{
+	border: none;
+}
+body{
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+}
+
+.content{
+	display: flex;
+}
+div.side-img{
+	background-image: url("img/halie-west-25xggax4bSA-unsplash.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+	width: 40%;
+}
+.text{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	padding: 10px;
+
+}
+.logo{
+    background-color: rgba(0 , 0, 0, 0.5);
+    position: relative;
+    top: 200px;
+}
+.text h1{
+	font-family: NorseBold;
+}
+.logo img{
+	height: 125px;
+}
+
+h1{
+	margin: 0;
+    color: white;
+    font-size: 4rem;
+}
+
+
+form{
+	display: grid;
+    grid-template-columns: 1fr 2fr;
+	border: 1px solid whitesmoke;
+	width: 50vh;
+}
+
+.form-input{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+	width: 50vh;
+}
+
+.signUpForm{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+	background-color: rgb(250, 250, 250);
+	width: 100%;
+}
+
+.backColor{
+	background-color: white;
+	box-shadow: 0 0 1em rgb(0 0 0 / 0.3);
+	width: 100%;
+	padding-bottom:30px;
+	padding-top:20px;
+	padding-left: 7%;
+}
+.backColor h1{
+	font-size: 2rem;
+	color: black;
+	position: relative;
+	padding-bottom: 20px;
+}
+
+.text-top{
+	text-align: justify;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding-left: 7%;
+    padding-right: 7%;
+
+}
+
+p{
+	margin: 24px 0;
+}
+
+input{
+	border: 1px solid #b1b1b1;
+	width: 23vw;
+	border-radius: 4px;
+	height: 3vh;
+	padding-left: 10px;
+	outline: none;
+}
+
+input.focus:focus{
+	border: 1px solid blue;
+	box-shadow: 0 0 rgb(0, 0, 0);
+
+}
+
+input:focus{
+	border: 1px solid rgb(41, 40, 40);
+}
+
+label{
+	font-size: 1rem;
+	color: rgb(100, 100, 100);
+}
+.btn-account{
+    height: 5vh;
+    background-color: #596D48;
+    color: white;
+    width: 18vw;
+    border-radius: 8px;
+    margin-top: 20px;;
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+.btn-account:hover, .login:hover{
+	cursor: pointer;
+	opacity: 0.9;
+}
+
+.login{
+	color: #596D48;
+	font-weight: 600;
+}
+
+
+input.error{
+	border: 1px solid red;
+}
+
+.btn-login{
+	position: relative;
+	left: 7%;
+}
